@@ -1,4 +1,4 @@
-class udevnet::setup {
+class udevnet {
   concat { '/etc/udev/rules.d/70puppet-net.rules': }
   concat::fragment { "udev_network_setup_header":
     target => '/etc/udev/rules.d/70puppet-net.rules',
