@@ -6,7 +6,7 @@ class udevnet {
     order => 01,
   }
 
-  file { '/etc/udev/rules.d/70persistent-net.rules':
+  file { ['/etc/udev/rules.d/70persistent-net.rules','/etc/udev/rules.d/70-persistent-net.rules']:
     ensure => absent,
   }
 
