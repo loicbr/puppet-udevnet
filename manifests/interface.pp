@@ -1,6 +1,6 @@
 define udevnet::interface($hwaddress) {
-  if !defined( Class['udevnet::setup'] ) {
-    class { 'udevnet::setup': }
+  if !defined( Class['udevnet'] ) {
+    class { 'udevnet': }
   }
 
   concat::fragment { "udev_network_${name}":
