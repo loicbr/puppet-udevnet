@@ -1,4 +1,7 @@
 class udevnet {
+
+  include udevnet::trigger
+
   concat { '/etc/udev/rules.d/70puppet-net.rules':
     notify => Class['udevnet::trigger']
   }
