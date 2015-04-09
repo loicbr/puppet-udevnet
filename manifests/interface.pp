@@ -1,4 +1,4 @@
-define udevnet::interface($hwaddress, $trigger = true) {
+define udevnet::interface($hwaddress) {
   if !defined( Class['udevnet'] ) {
     class { 'udevnet': }
   }
