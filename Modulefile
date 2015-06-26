@@ -8,4 +8,4 @@ user to give persistent names to interfaces based on their MAC address
 (in the future alternative methods might be provided).'
 project_page 'https://github.com/Flameeyes/puppet-udevnet'
 
-dependency 'ripienaar/concat'
+dependency 'puppetlabs/concat'
